@@ -22,7 +22,7 @@
 #         ## Another way reference your environment variables
 #         run: echo "The API key is:$API_KEY"   
 
-name: env_tutorial
+name: main
 ## Triggers the workflow on when there is a push, or 
 ## pull request on the main branch
 on: push 
@@ -30,7 +30,7 @@ on: push
 jobs:
   job1:
     ## The type of runner that the job will run on
-    runs-on: windows-latest 
+    runs-on: ububtu-latest 
     steps:
       - name: step 1
         env:
